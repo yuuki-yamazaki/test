@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="gatling-sbt-prototype"
+		module="gatling-sbt-prototype_2.11"
+		revision="1.0"
+		conf="plugin"
+		confs="gatling, it, gatling-it, compile, runtime, test, provided, optional, it-internal, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20151020183152"/>
+	<dependencies>
+	</dependencies>
+</ivy-report>
