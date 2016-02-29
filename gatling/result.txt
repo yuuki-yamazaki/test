@@ -1,0 +1,150 @@
+[info] Loading project definition from /var/lib/jenkins/jobs/sample/workspace/project
+[info] Set current project to gatling-sbt-prototype (in build file:/var/lib/jenkins/jobs/sample/workspace/)
+18:47:39.980 [New I/O worker #1] DEBUG c.n.h.c.p.n.r.NettyConnectListener - Using non-cached Channel [id: 0x8e442278, /10.0.2.15:60492 => ssl.google-analytics.com/173.194.117.158:443] for POST '/collect'
+18:47:40.052 [New I/O worker #1] DEBUG c.n.h.c.p.netty.handler.HttpProtocol - 
+
+Request DefaultHttpRequest(chunked: false)
+POST /collect HTTP/1.1
+Connection: Keep-Alive
+User-Agent: java/1.7.0_85
+Content-Length: 135
+Content-Type: application/x-www-form-urlencoded
+Host: ssl.google-analytics.com
+Accept: */*
+
+Response DefaultHttpResponse(chunked: false)
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Date: Tue, 20 Oct 2015 09:47:40 GMT
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, no-store, must-revalidate
+Last-Modified: Sun, 17 May 1998 03:00:00 GMT
+X-Content-Type-Options: nosniff
+Content-Type: image/gif
+Server: Golfe2
+Content-Length: 35
+Alternate-Protocol: 443:quic,p=1
+Alt-Svc: quic=":443"; p="1"; ma=604800
+
+18:47:40.054 [New I/O worker #1] DEBUG c.n.h.c.p.n.channel.ChannelManager - Adding key: https://ssl.google-analytics.com:443 for channel [id: 0x8e442278, /10.0.2.15:60492 => ssl.google-analytics.com/173.194.117.158:443]
+Simulation scenarios.test.Test started...
+18:47:41.127 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  io.gatling.http.config.HttpProtocol - Start warm up
+18:47:41.377 [New I/O worker #5] DEBUG c.n.h.c.p.n.r.NettyConnectListener - Using non-cached Channel [id: 0xcdc129bf, /10.0.2.15:53590 => gatling.io/192.30.252.153:80] for GET '/'
+18:47:41.538 [New I/O worker #5] DEBUG c.n.h.c.p.netty.handler.HttpProtocol - 
+
+Request DefaultHttpRequest(chunked: false)
+GET / HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:16.0) Gecko/20100101 Firefox/16.0
+Host: gatling.io
+
+Response DefaultHttpResponse(chunked: true)
+HTTP/1.1 302 Found
+Connection: close
+Pragma: no-cache
+cache-control: no-cache
+Location: /
+
+18:47:41.540 [New I/O worker #5] DEBUG c.n.h.c.p.n.channel.ChannelManager - Closing Channel [id: 0xcdc129bf, /10.0.2.15:53590 :> gatling.io/192.30.252.153:80] 
+18:47:41.540 [New I/O worker #5] DEBUG c.n.h.c.p.netty.handler.Processor - Channel Closed: [id: 0xcdc129bf, /10.0.2.15:53590 :> gatling.io/192.30.252.153:80] with attribute INSTANCE
+18:47:41.540 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  io.gatling.http.config.HttpProtocol - Warm up done
+18:47:41.559 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  i.gatling.core.controller.Controller - Total number of users : 1
+18:47:41.578 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.result.writer.FileDataWriter - Initializing
+18:47:41.582 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.r.writer.ConsoleDataWriter - Initializing
+18:47:41.584 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.r.writer.ConsoleDataWriter - Initialized
+18:47:41.655 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.result.writer.FileDataWriter - Initialized
+18:47:41.658 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG i.gatling.core.controller.Controller - Launching All Scenarios
+18:47:41.661 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG i.gatling.core.controller.Controller - Finished Launching scenarios executions
+18:47:41.662 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG i.gatling.core.controller.Controller - Setting up max duration
+18:47:41.672 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.gatling.core.controller.Controller - Start user #5665141515723688447-0
+18:47:41.752 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  io.gatling.http.ahc.HttpEngine - Sending request=sample uri=http://localhost:8080: scenario=join, userId=5665141515723688447-0
+18:47:41.795 [New I/O worker #6] DEBUG c.n.h.c.p.n.r.NettyConnectListener - Using non-cached Channel [id: 0xc37c1dad, /127.0.0.1:46348 => localhost/127.0.0.1:8080] for GET '/'
+
+================================================================================
+2015-10-20 18:47:41                                           0s elapsed
+---- join ----------------------------------------------------------------------
+[                                                                          ]  0%
+          waiting: 1      / active: 0      / done:0     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=0      KO=0     )
+
+================================================================================
+
+18:47:41.862 [New I/O worker #6] DEBUG c.n.h.c.p.netty.handler.HttpProtocol - 
+
+Request DefaultHttpRequest(chunked: false)
+GET / HTTP/1.1
+Connection: keep-alive
+Host: localhost:8080
+Accept: */*
+
+Response DefaultHttpResponse(chunked: true)
+HTTP/1.1 200 OK
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache,no-store,must-revalidate
+X-Hudson-Theme: default
+Content-Type: text/html;charset=UTF-8
+Set-Cookie: JSESSIONID.cf4d56fc=1kcxqwsnlka4e1mrle4xeqoqlx;Path=/;HttpOnly
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+X-Hudson: 1.395
+X-Jenkins: 1.634
+X-Jenkins-Session: 86fcf3f9
+X-Hudson-CLI-Port: 57050
+X-Jenkins-CLI-Port: 57050
+X-Jenkins-CLI2-Port: 57050
+X-Frame-Options: sameorigin
+X-Instance-Identity: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjC7rV+A+GHXRxWJgeU2T26WeWS0OV2fj6IgthYSHlo9ScJerLBUZi4i/np7sZZx2lAgZLRRyp7hQfJ3LSd7Hn4gtkCBhhClo9ruW9iFaUeIi69Esimdb4qFwNyizVl/yuEgyOrWtvqNZXNJFN8hRNydk5r8x+NaW8xWLoicHzNkNysB2t2sdGRY3DaayT+FeLMDcNeSWDmcVTTyjwSmGTpAXNr21h768AO4hO3yKdQ0JfugAZSsYMWr1Ca5IYtHsa+FFrSZYsGwz37HKIgMLS8sI2hw4dhA+DOjrZ+gFRepY4hjWQ4SOE+SM+We/9HWgsUt4zXJH9cuMdGjgermfhQIDAQAB
+X-SSH-Endpoint: localhost:34027
+Content-Length: 15222
+Server: Jetty(winstone-2.8)
+
+18:47:41.864 [New I/O worker #6] DEBUG c.n.h.c.p.n.channel.ChannelManager - Adding key: 5665141515723688447-0|http://localhost:8080 for channel [id: 0xc37c1dad, /127.0.0.1:46348 => localhost/127.0.0.1:8080]
+18:47:41.923 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  i.gatling.core.controller.Controller - End user #5665141515723688447-0
+
+================================================================================
+2015-10-20 18:47:41                                           0s elapsed
+---- join ----------------------------------------------------------------------
+[##########################################################################]100%
+          waiting: 0      / active: 0      / done:1     
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=1      KO=0     )
+> sample                                                   (OK=1      KO=0     )
+================================================================================
+
+18:47:41.927 [New I/O worker #6] DEBUG c.n.h.c.p.netty.handler.Processor - Channel Closed: [id: 0xc37c1dad, /127.0.0.1:46348 :> localhost/127.0.0.1:8080] with attribute INSTANCE
+Simulation finished
+Parsing log file(s)...
+18:47:42.004 [pool-1-thread-1] INFO  i.g.c.result.reader.FileDataReader - Collected List(/var/lib/jenkins/jobs/sample/workspace/target/gatling/test-1445334461560/simulation.log) from test-1445334461560
+18:47:42.017 [pool-1-thread-1] INFO  i.g.c.result.reader.FileDataReader - First pass
+18:47:42.023 [pool-1-thread-1] INFO  i.g.c.result.reader.FileDataReader - First pass done: read 4 lines
+18:47:42.027 [pool-1-thread-1] INFO  i.g.c.result.reader.FileDataReader - Second pass
+18:47:42.070 [pool-1-thread-1] INFO  i.g.c.result.reader.FileDataReader - Second pass: read 4 lines
+Parsing log file(s) done
+Generating reports...
+
+================================================================================
+---- Global Information --------------------------------------------------------
+> request count                                          1 (OK=1      KO=0     )
+> min response time                                     78 (OK=78     KO=-     )
+> max response time                                     78 (OK=78     KO=-     )
+> mean response time                                    78 (OK=78     KO=-     )
+> std deviation                                          0 (OK=0      KO=-     )
+> response time 50th percentile                         78 (OK=78     KO=-     )
+> response time 75th percentile                         78 (OK=78     KO=-     )
+> mean requests/sec                                  3.788 (OK=3.788  KO=-     )
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                             1 (100%)
+> 800 ms < t < 1200 ms                                   0 (  0%)
+> t > 1200 ms                                            0 (  0%)
+> failed                                                 0 (  0%)
+================================================================================
+
+Reports generated in 0s.
+Please open the following file: /var/lib/jenkins/jobs/sample/workspace/target/gatling/test-1445334461560/index.html
+[info] Simulation Test successful.
+[info] Simulation(s) execution ended.
+[success] Total time: 7 s, completed 2015/10/20 18:47:42
